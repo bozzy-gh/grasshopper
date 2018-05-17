@@ -1,0 +1,1 @@
+This folder and its contents can be deleted after running grasshopper installation (install.sh)
