@@ -1,5 +1,4 @@
 #!/usr/bin/python
-#/var/www/exec/monitor
 # -*- coding: utf-8 -*-
 
 import sys
@@ -9,7 +8,7 @@ import sqlite3
 import datetime
 import ownGateway
 
-dbfile    = "/var/www/db/grasshopper.sqlite"
+dbfile    = os.path.abspath(os.path.dirname(sys.argv[0])) + "/../../db/grasshopper.sqlite"
 logfolder = "/var/log/grasshopper"
 
 recipient = "some.address@email.com"

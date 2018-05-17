@@ -6,7 +6,7 @@ define('COMMANDS', '*99*0##'); // Commands session
 
 function ownConnect($gwMode) {
     // Read config from ownGateway.conf
-    $config = parse_ini_file('/var/www/exec/ownGateway.conf');
+    $config = parse_ini_file(dirname(__FILE__).'/ownGateway.conf');
     $gwHost = $config['HOST'];
     $gwPort = $config['PORT'];
     $gwPassword = $config['PASSWORD'];

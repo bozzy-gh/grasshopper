@@ -19,7 +19,7 @@
 	# Defines
 	#/////////////////////////////////////////////////////////////////////////////////////
 	#Filepaths
-	FILEPATH_GRASSHOPPER="/var/www"
+	FILEPATH_GRASSHOPPER="/var/www" # CHANGE TO FIT YOUR NEEDS (ok for default installation)
 	FILEPATH_LOGS="/var/log/grasshopper"
 
 	#Exit path for non-root privileges.
@@ -34,7 +34,7 @@
 	Install_Permissions(){
 
 		#-----------------------------------------------------------------------
-		#Set www-data access to all files and folders in /var/www
+		#Set www-data access to all files and folders in $FILEPATH_GRASSHOPPER
 		chown -R www-data:www-data "$FILEPATH_GRASSHOPPER"
 
 		#Generate an Array which contains a list of permissions for files/folders.

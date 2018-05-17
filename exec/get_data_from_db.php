@@ -5,8 +5,8 @@
     // Create an array
     $rows = array();
 
-    if (is_file("/var/www/db/grasshopper.sqlite")) {
-        $sqlite = new SQLite3("/var/www/db/grasshopper.sqlite", SQLITE3_OPEN_READONLY);
+    if (is_file(dirname(__FILE__)."/../db/grasshopper.sqlite")) {
+        $sqlite = new SQLite3(dirname(__FILE__)."/../db/grasshopper.sqlite", SQLITE3_OPEN_READONLY);
     }
 
     if (!empty($sqlite)) {

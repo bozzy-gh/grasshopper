@@ -26,7 +26,7 @@ COMMANDS='*99*0##'
 def Connect(gwMode, first_time = True):
     # Read config from ownGateway.conf
     config = ConfigParser.RawConfigParser()
-    config.read('/var/www/exec/ownGateway.conf')
+    config.read(os.path.abspath(os.path.dirname(sys.argv[0])) + '/../ownGateway.conf')
     gwHost = config.get('GATEWAY', 'HOST');
     gwPort = int(config.get('GATEWAY', 'PORT'));
     gwPassword = config.get('GATEWAY', 'PASSWORD');
