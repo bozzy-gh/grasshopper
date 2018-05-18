@@ -11,7 +11,7 @@
 ### END INIT INFO
 
 NAME="Grasshopper"
-SCRIPT="python ""$( dirname "$(readlink -f "$0")" )"/../exec/monitor/monitor.py"
+SCRIPT="python /var/www/exec/monitor/monitor.py"
 USER=root
 
 PIDFILE=/run/grasshopper.pid

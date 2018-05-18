@@ -73,7 +73,7 @@
 	#/////////////////////////////////////////////////////////////////////////////////////
 	Install_Service(){
 		#Setup grasshopper system service
-		cp "$FILEPATH_GRASSHOPPER"/install/service.sh /etc/init.d/grasshopper
+		cp "$FILEPATH_GRASSHOPPER"/install/grasshopper.init.d /etc/init.d/grasshopper
 		chmod +x /etc/init.d/grasshopper
 		update-rc.d grasshopper defaults 80 10
 	}

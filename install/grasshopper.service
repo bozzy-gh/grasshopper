@@ -1,0 +1,13 @@
+[Unit]
+Description=Grasshopper Monitor Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/var/www/exec/monitor/monitor.py
+RestartSec=10
+TimeoutStartSec=30
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
