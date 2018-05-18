@@ -15,7 +15,7 @@
 <script type="text/javascript" src="jquery-ui-1.11.1.min.js"></script>
 <script type="text/javascript" src="jquery.appendGrid-1.5.2.js"></script>
 
-<?php include($_SERVER['DOCUMENT_ROOT']."/setup/includes/ajax_php_submit.php"); ?>
+<?php include(dirname(__FILE__)."/includes/ajax_php_submit.php"); ?>
 
 
 

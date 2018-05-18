@@ -6,11 +6,11 @@
 
     <title>Grasshopper</title>
 
-    <?php include($_SERVER['DOCUMENT_ROOT']."/includes/jquerymobile.php"); ?>
+    <?php include(dirname(__FILE__)."/includes/jquerymobile.php"); ?>
 
     <link rel="stylesheet" type="text/css" href="css/grasshopper.css">
 
-    <?php include($_SERVER['DOCUMENT_ROOT']."/includes/snippet_myajaxrequest.php"); ?>
+    <?php include(dirname(__FILE__)."/includes/snippet_myajaxrequest.php"); ?>
 
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
@@ -28,7 +28,7 @@
             <h2>Grasshopper</h2>
         </div>
         <div data-role="collapsible-set" data-inset="true">
-            <?php include($_SERVER['DOCUMENT_ROOT']."/includes/controls.php"); ?>
+            <?php include(dirname(__FILE__)."/includes/controls.php"); ?>
         </div>
     </div>
 
@@ -39,9 +39,9 @@
     </script>
 </body>
 
-<?php include($_SERVER['DOCUMENT_ROOT']."/js/refresh_lightstatus_from_db.js"); ?>
-<?php include($_SERVER['DOCUMENT_ROOT']."/js/sliderupdates.js"); ?>
-<?php include($_SERVER['DOCUMENT_ROOT']."/js/onoffsliderupdates.js"); ?>
-<?php include($_SERVER['DOCUMENT_ROOT']."/includes/continuously_update_status.php"); ?>
+<?php include(dirname(__FILE__)."/js/refresh_lightstatus_from_db.js"); ?>
+<?php include(dirname(__FILE__)."/js/sliderupdates.js"); ?>
+<?php include(dirname(__FILE__)."/js/onoffsliderupdates.js"); ?>
+<?php include(dirname(__FILE__)."/includes/continuously_update_status.php"); ?>
 
 </html>
