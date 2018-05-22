@@ -21,32 +21,33 @@
 </head>
 
 <body>
-    <div id="loading">
-        <img id="loading-image" src="pics/pageloader.gif" alt="Loading..." />
+  <div id="loading">
+    <img id="loading-image" src="pics/pageloader.gif" alt="Loading..." />
+  </div>
+
+  <div data-role="page" id="pageone" data-inset="true" data-theme="a" data-content-theme="a">
+    <div data-role="header">
+      <h2>Grasshopper</h2>
     </div>
-
-    <div data-role="page" id="pageone" data-inset="true" data-theme="a" data-content-theme="a">
-        <div data-role="header">
-            <h2>Grasshopper</h2>
-        </div>
-        <div data-role="collapsible-set" data-inset="true">
-            <?php require dirname(__FILE__).'/includes/controls.php'; ?>
-        </div>
+    <div data-role="collapsible-set" data-inset="true">
+<?php require dirname(__FILE__).'/includes/controls.php'; ?>
     </div>
+  </div>
 
-    <script>
-        $(window).load(function() {
-            $('#loading').hide();
-        });
-    </script>
+  <script>
+    $(window).load(function() {
+      $('#loading').hide();
+    });
+  </script>
 
-    <?php require dirname(__FILE__).'/includes/refresh_lightstatus_from_db.php'; ?>
-    <?php require dirname(__FILE__).'/includes/light_on-off_execute.php'; ?>
-    <?php require dirname(__FILE__).'/includes/light_dimmer_execute.php'; ?>
+<?php require dirname(__FILE__).'/includes/refresh_lightstatus_from_db.php'; ?>
 
-    <script src="includes/ajax_submit.js"></script>
-    <script src="includes/continuously_update_status.js"></script>
+<?php require dirname(__FILE__).'/includes/light_on-off_execute.php'; ?>
 
+<?php require dirname(__FILE__).'/includes/light_dimmer_execute.php'; ?>
+
+  <script src="includes/ajax_submit.js"></script>
+  <script src="includes/continuously_update_status.js"></script>
 </body>
 
 </html>
