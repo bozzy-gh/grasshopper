@@ -1,6 +1,6 @@
 //this script calls exec/get_data_from_db.php to get the latest status from the DB. Based on the feedback, it updates sliders and on-off sliders in the UI.
 
-//this function is comrpised of 4 parts:
+//this function is comprised of 4 parts:
 //1. get the latest statuses from MySQL
 //2. put every lightstatus in a variable
 //3. update the sliders and onoff sliders on the web page
@@ -9,7 +9,7 @@
 
 <script>
 
-//1. this function refresh_lightstatus() is also called from js/sliderupdates.js and js/onoffsliderupdates.js
+//1. this function refresh_lightstatus() is also called from js/light_on-off_execute.php and js/light_dimmer_execute.php
 function refresh_lightstatus() {
     var url="exec/get_data_from_db.php?table=pointstatus";
 

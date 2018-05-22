@@ -30,7 +30,7 @@
             <h2>Grasshopper</h2>
         </div>
         <div data-role="collapsible-set" data-inset="true">
-            <?php include(dirname(__FILE__)."/includes/controls.php"); ?>
+            <?php require dirname(__FILE__).'/includes/controls.php'; ?>
         </div>
     </div>
 
@@ -41,9 +41,9 @@
     </script>
 
 
-    <?php include(dirname(__FILE__)."/js/refresh_lightstatus_from_db.php"); ?>
-    <?php include(dirname(__FILE__)."/js/sliderupdates.php"); ?>
-    <?php include(dirname(__FILE__)."/js/onoffsliderupdates.php"); ?>
+    <?php require dirname(__FILE__).'/js/refresh_lightstatus_from_db.php'; ?>
+    <?php require dirname(__FILE__).'/js/light_on-off_execute.php'; ?>
+    <?php require dirname(__FILE__).'/js/light_dimmer_execute.php'; ?>
 
     <script src="includes/ajax_submit.js"></script>
     <script src="includes/continuously_update_status.js"></script>

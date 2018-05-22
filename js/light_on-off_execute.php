@@ -1,4 +1,4 @@
-//this script looks at the value of the onoffslider and forwards that value to the MH200 and the MySQL database. If it is a dimmable light, also the slider (0=>10) is updated on the webpage.
+//this script looks at the value of the on-off button and forwards that value to the Gateway. If it is a dimmable light, also the slider (0=>10) is updated on the webpage.
 <script>
 
 <?php

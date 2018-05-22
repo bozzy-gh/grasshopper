@@ -1,4 +1,4 @@
-//this script looks at the value of the slider (0=>10) and forwards the value to the MH200 and the mysql database. Also the on/off button on the web page is updated following the value of the slider.
+//this script looks at the value of the slider (0=>10) and forwards that value to the Gateway. Also the on/off button on the web page is updated following the value of the slider.
 
 <script>
 
