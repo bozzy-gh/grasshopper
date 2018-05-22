@@ -1,6 +1,6 @@
 <?php
-    // this file is called from ./js/refresh_lightstatus_from_db.js
-    //It will make the actual connection to the DB and echo the output to ./js/refresh_lightstatus_from_db.js for processing.
+    // this file is called from ./includes/refresh_lightstatus_from_db.js
+    //It will make the actual connection to the DB and echo the output to ./includes/refresh_lightstatus_from_db.js for processing.
 
     // Create an array
     $rows = array();

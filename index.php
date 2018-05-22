@@ -40,10 +40,9 @@
         });
     </script>
 
-
-    <?php require dirname(__FILE__).'/js/refresh_lightstatus_from_db.php'; ?>
-    <?php require dirname(__FILE__).'/js/light_on-off_execute.php'; ?>
-    <?php require dirname(__FILE__).'/js/light_dimmer_execute.php'; ?>
+    <?php require dirname(__FILE__).'/includes/refresh_lightstatus_from_db.php'; ?>
+    <?php require dirname(__FILE__).'/includes/light_on-off_execute.php'; ?>
+    <?php require dirname(__FILE__).'/includes/light_dimmer_execute.php'; ?>
 
     <script src="includes/ajax_submit.js"></script>
     <script src="includes/continuously_update_status.js"></script>

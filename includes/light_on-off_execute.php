@@ -2,7 +2,7 @@
 <script>
 
 <?php
-    $myhome = parse_ini_file('includes/myhome.conf', true);
+    $myhome = parse_ini_file(dirname(__FILE__).'/myhome.conf', true);
     $myhomevalues = array_values($myhome);
     $roomscount = count($myhome);
     for ($room = 0; $room < $roomscount; $room++) {

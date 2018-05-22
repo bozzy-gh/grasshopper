@@ -9,7 +9,7 @@
 
 <script>
 
-//1. this function refresh_lightstatus() is also called from js/light_on-off_execute.php and js/light_dimmer_execute.php
+//1. this function refresh_lightstatus() is also called from includes/light_on-off_execute.php and includes/light_dimmer_execute.php
 function refresh_lightstatus() {
     var url="exec/get_data_from_db.php?table=pointstatus";
 
@@ -20,7 +20,7 @@ function refresh_lightstatus() {
         for(var i = 0, numrows = data.groups.length; i < numrows; i++) {
 
             <?php
-                $myhome = parse_ini_file('includes/myhome.conf', true);
+                $myhome = parse_ini_file(dirname(__FILE__).'/myhome.conf', true);
                 $myhomevalues = array_values($myhome);
                 $roomscount = count($myhome);
                 for ($room = 0; $room < $roomscount; $room++) {
@@ -45,7 +45,7 @@ function refresh_lightstatus() {
         }
 
         <?php
-            $myhome = parse_ini_file('includes/myhome.conf', true);
+            $myhome = parse_ini_file(dirname(__FILE__).'/myhome.conf', true);
             $myhomevalues = array_values($myhome);
             $roomscount = count($myhome);
 

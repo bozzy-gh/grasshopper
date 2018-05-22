@@ -1,6 +1,6 @@
 <?php
     $returnhome = array();
-    $myhome = parse_ini_file('../includes/myhome.conf', true);
+    $myhome = parse_ini_file(dirname(__FILE__).'/../includes/myhome.conf', true);
     $myhomekeys = array_keys($myhome);
     $myhomevalues = array_values($myhome);
     $roomscount = count($myhome);
