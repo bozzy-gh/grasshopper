@@ -1,15 +1,15 @@
-.fliper { 
-	position:absolute; right:1%; top:2%; 
+.fliper {
+	position: absolute; right: 1%; top: 0%;
 	}
 
-.custom-count-pos{
+.custom-count-pos {
     font-size: 100%;
     font-weight: bold;
     padding: 0.2em 0.5em;
     float: right;
 }
 
-h2{
+h2 {
     font-size: 100% !important;
 }
 
@@ -20,7 +20,7 @@ h2{
 	border: 0px;
 }​
 
-.GrasshopperTitle{
+.GrasshopperTitle {
     font-size: 80% !important;
 }
 

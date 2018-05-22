@@ -21,7 +21,7 @@
             echo "              <div class=\"ui-block-a\" style=\"width:25%\">".$mypoint[0]."</div>\n";
             if ($mypoint[1] == 2) {
                 echo "              <div class=\"ui-block-b\" style=\"width:50%\">\n";
-                echo "                <div data-role=\"controlgroup\" data-type=\"horizontal\" data-mini=\"true\" align=\"center\">\n";
+                echo "                <div data-role=\"controlgroup\" data-type=\"horizontal\" data-mini=\"true\" align=\"center\" top=\"0%\">\n";
                 echo "                  <a href=\"javascript:openpage('exec/ownCommand.php?frame=' + encodeURIComponent('*2*2*".$myroomkeys[$point]."##'))\" data-role=\"button\" data-icon=\"arrow-d\" data-iconpos=\"notext\" align=\"right\">Down</a>\n";
                 echo "                  <a href=\"javascript:openpage('exec/ownCommand.php?frame=' + encodeURIComponent('*2*0*".$myroomkeys[$point]."##'))\" data-role=\"button\" data-icon=\"delete\" data-iconpos=\"notext\" align=\"right\">Stop</a>\n";
                 echo "                  <a href=\"javascript:openpage('exec/ownCommand.php?frame=' + encodeURIComponent('*2*1*".$myroomkeys[$point]."##'))\" data-role=\"button\" data-icon=\"arrow-u\" data-iconpos=\"notext\" align=\"right\">Up</a>\n";
@@ -31,9 +31,11 @@
             } else if ($mypoint[1] == 3) {
                 echo "              <div class=\"ui-block-b\" style=\"width:50%\"></div>\n";
                 echo "              <div class=\"ui-block-c\" style=\"width:25%\">\n";
-                echo "                <div data-role=\"controlgroup\" data-type=\"horizontal\" data-mini=\"true\" align=\"right\">\n";
-                echo "                  <button class=\"ui-btn ui-icon-power ui-btn-icon-notext\" name=\"room".$room."point".$point."button\" id=\"room".$room."point".$point."button\">Button</button>\n";
-                echo "                </div>\n";
+                //echo "                <div data-role=\"controlgroup\" data-type=\"horizontal\" data-mini=\"true\" align=\"right\">\n";
+                echo "                <span class=\"fliper\">\n";
+                echo "                  <button class=\"ui-btn ui-icon-power ui-btn-icon-notext\" name=\"room".$room."point".$point."button\" id=\"room".$room."point".$point."button\" data-mini=\"true\">Push</button>\n";
+                //echo "                </div>\n";
+                echo "                </span>\n";
                 echo "              </div>\n";
             } else {
                 if ($mypoint[1] == 1) {
