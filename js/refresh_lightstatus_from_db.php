@@ -7,7 +7,7 @@
 //4. update the number on every room-heading
 //In each part, I describe what to change.
 
-<script type="text/javascript">
+<script>
 
 //1. this function refresh_lightstatus() is also called from js/sliderupdates.js and js/onoffsliderupdates.js
 function refresh_lightstatus() {

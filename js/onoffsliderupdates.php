@@ -1,6 +1,5 @@
 //this script looks at the value of the onoffslider and forwards that value to the MH200 and the MySQL database. If it is a dimmable light, also the slider (0=>10) is updated on the webpage.
-
-<script type="text/javascript">
+<script>
 
 <?php
     $myhome = parse_ini_file('includes/myhome.conf', true);

@@ -6,11 +6,13 @@
 
     <title>Grasshopper</title>
 
-    <?php include(dirname(__FILE__)."/includes/jquerymobile.php"); ?>
+    <link rel="stylesheet" href="themes/custom.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="includes/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="includes/jquery-1.11.1.min.js"></script>
+    <script src="includes/jquery.mobile-1.4.5.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/grasshopper.css">
-
-    <?php include(dirname(__FILE__)."/includes/snippet_myajaxrequest.php"); ?>
 
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
@@ -32,16 +34,20 @@
         </div>
     </div>
 
-    <script language="javascript" type="text/javascript">
+    <script>
         $(window).load(function() {
             $('#loading').hide();
         });
     </script>
-</body>
 
-<?php include(dirname(__FILE__)."/js/refresh_lightstatus_from_db.js"); ?>
-<?php include(dirname(__FILE__)."/js/sliderupdates.js"); ?>
-<?php include(dirname(__FILE__)."/js/onoffsliderupdates.js"); ?>
-<?php include(dirname(__FILE__)."/includes/continuously_update_status.php"); ?>
+
+    <?php include(dirname(__FILE__)."/js/refresh_lightstatus_from_db.php"); ?>
+    <?php include(dirname(__FILE__)."/js/sliderupdates.php"); ?>
+    <?php include(dirname(__FILE__)."/js/onoffsliderupdates.php"); ?>
+
+    <script src="includes/ajax_submit.js"></script>
+    <script src="includes/continuously_update_status.js"></script>
+
+</body>
 
 </html>
