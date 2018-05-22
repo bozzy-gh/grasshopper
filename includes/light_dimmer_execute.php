@@ -1,4 +1,4 @@
-//this script looks at the value of the slider (0=>10) and forwards that value to the Gateway. Also the on/off button on the web page is updated following the value of the slider.
+//this script looks at the value of the slider (0=>10) and forwards that value to the Gateway. Also the on-off switch on the web page is updated following the value of the slider.
 
 <script>
 
@@ -21,10 +21,9 @@
                 echo "    window.clearInterval(run_update_every_x_milliseconds);\n";
                 echo "});\n";
                 echo "$(\"#div-room".$room."point".$point."slider\").on('slidestop', function() {\n";
-                echo "    var bticinolightnumber = \"".$myroomkeys[$point]."\"\n";
+                echo "    var mhlightnumber = \"".$myroomkeys[$point]."\"\n";
                 echo "    var sliderstatus = $(\"#room".$room."point".$point."slider\").val();\n";
-                echo "    var slideronoffstatus = $(\"#room".$room."point".$point."onoff\").val();\n";
-                echo "    $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*1*\" + sliderstatus + \"*\" + bticinolightnumber + \"##\"));\n";
+                echo "    $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*1*\" + sliderstatus + \"*\" + mhlightnumber + \"##\"));\n";
                 echo "    if (sliderstatus != \"0\") {\n";
                 echo "        $(\"#room".$room."point".$point."onoff\").val('on').slider(\"refresh\");\n";
                 echo "    } else {\n";

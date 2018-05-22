@@ -1,9 +1,9 @@
-//this script calls exec/get_data_from_db.php to get the latest status from the DB. Based on the feedback, it updates sliders and on-off sliders in the UI.
+//this script calls exec/get_data_from_db.php to get the latest status from the DB. Based on the feedback, it updates sliders and on-off switches in the UI.
 
 //this function is comprised of 4 parts:
-//1. get the latest statuses from MySQL
+//1. get the latest status from the DB
 //2. put every lightstatus in a variable
-//3. update the sliders and onoff sliders on the web page
+//3. update the sliders and on-off switches on the web page
 //4. update the number on every room-heading
 //In each part, I describe what to change.
 
@@ -49,8 +49,8 @@ function refresh_lightstatus() {
             $myhomevalues = array_values($myhome);
             $roomscount = count($myhome);
 
-//3. update the sliders and onoff sliders on the webpage
-// So lightpoints without a dimmer only refresh the value of the on-off slider and with a dimmer also need to refresh the value of the dimmer-slider
+//3. update the sliders and on-off switches on the webpage
+// So lightpoints without a dimmer only refresh the value of the on-off switch and with a dimmer also need to refresh the value of the dimmer-slider
 // I have put comments with frontdoorledsstatus to indicate what may need to be changed for lightpoints without a dimmer and
 // I put comments with kitchensinkstatus to indicate what may need to be changed for lightpoints with a dimmer
 
