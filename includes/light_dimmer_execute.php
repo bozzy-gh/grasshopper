@@ -22,7 +22,7 @@
                 echo "});\n";
                 echo "$(\"#div-room".$room."point".$point."slider\").on('slidestop', function() {\n";
                 echo "    var mhlightnumber = \"".$myroomkeys[$point]."\"\n";
-                echo "    var sliderstatus = $(\"#room".$room."point".$point."slider\").val();\n";
+                echo "    var sliderstatus = $(this).val();\n";
                 echo "    $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*1*\" + sliderstatus + \"*\" + mhlightnumber + \"##\"));\n";
                 echo "    if (sliderstatus != \"0\") {\n";
                 echo "        $(\"#room".$room."point".$point."onoff\").val('on').slider(\"refresh\");\n";
