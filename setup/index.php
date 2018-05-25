@@ -323,7 +323,7 @@ Enter your Bticino Gateway IP address / Port number / Password.<br><br>
 
     <p>
 <u><b>Manage the controlpoint table:</b></u><br><br>
-To get a view on the status of the control points in the database table, access <A href="/phpliteadmin/phpliteadmin.php">phpLiteAdmin</A>.<br><br>
+To get a view on the status of the control points in the database table, access <a href="../phpliteadmin/phpliteadmin.php">phpLiteAdmin</a>.<br><br>
 Log in using password <b>admin</b><br><br>
 
 </div>
