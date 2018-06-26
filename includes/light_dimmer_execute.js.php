@@ -1,6 +1,6 @@
   //this script looks at the value of the slider (0=>10) and forwards that value to the Gateway. Also the on-off switch on the web page is updated following the value of the slider.
-  <script>
 <?php
+    Header("content-type: application/x-javascript");
     $myhome = parse_ini_file(dirname(__FILE__).'/myhome.conf', true);
     $myhomevalues = array_values($myhome);
     $roomscount = count($myhome);
@@ -33,4 +33,3 @@
         }
     }
 ?>
-  </script>

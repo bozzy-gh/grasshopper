@@ -13,6 +13,11 @@
     <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/grasshopper.css">
+    <script src="includes/ajax_submit.js"></script>
+    <script src="includes/continuously_update_status.js"></script>
+    <script src="includes/refresh_lightstatus_from_db.js.php"></script>
+    <script src="includes/light_on-off_execute.js.php"></script>
+    <script src="includes/light_dimmer_execute.js.php"></script>
 
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
@@ -39,15 +44,6 @@
       $('#loading').hide();
     });
   </script>
-
-<?php require dirname(__FILE__).'/includes/refresh_lightstatus_from_db.php'; ?>
-
-<?php require dirname(__FILE__).'/includes/light_on-off_execute.php'; ?>
-
-<?php require dirname(__FILE__).'/includes/light_dimmer_execute.php'; ?>
-
-  <script src="includes/ajax_submit.js"></script>
-  <script src="includes/continuously_update_status.js"></script>
 </body>
 
 </html>
