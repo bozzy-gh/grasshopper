@@ -1,0 +1,56 @@
+<?php
+    Header("Content-Type: application/javascript");
+
+    echo "//this script looks at the value of the onoffslider and forwards that value to the MH200 and the MySQL database. If it is a dimmable light, also the slider (0=>10) is updated on the webpage."
+    echo "$(\"#room0split0button\").bind('click', function() {\n";
+    echo "    var bticinolightnumber = \"1\";\n";
+    echo "    var bticinomode = $(\"#room0split0mode\").val();\n";
+    echo "    var bticinotemp = $(\"#room0split0temp\").val() * 10;\n";
+    echo "    var bticinospeed = $(\"#room0split0speed\").val();\n";
+    echo "    if ($(\"#room0split0swing\").prop(\"checked\")) {\n";
+    echo "        var bticinoswing = \"1\";\n";
+    echo "    } else {\n";
+    echo "        var bticinoswing = \"0\";\n";
+    echo "    }\n";
+    echo "    $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*#4*3#11#\" + bticinolightnumber + \"*#22*\" + bticinomode + \"*\" + bticinotemp + \"*\" + bticinospeed + \"*\" + bticinoswing + \"##\"));\n";
+    echo "});\n";
+    echo "\n";
+    echo "$(\"#room1split0button\").bind('click', function() {\n";
+    echo "    var bticinolightnumber = \"2\";\n";
+    echo "    var bticinomode = $(\"#room1split0mode\").val();\n";
+    echo "    var bticinotemp = $(\"#room1split0temp\").val() * 10;\n";
+    echo "    var bticinospeed = $(\"#room1split0speed\").val();\n";
+    echo "    if ($(\"#room1split0swing\").prop(\"checked\")) {\n";
+    echo "        var bticinoswing = \"1\";\n";
+    echo "    } else {\n";
+    echo "        var bticinoswing = \"0\";\n";
+    echo "    }\n";
+    echo "    $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*#4*3#11#\" + bticinolightnumber + \"*#22*\" + bticinomode + \"*\" + bticinotemp + \"*\" + bticinospeed + \"*\" + bticinoswing + \"##\"));\n";
+    echo "});\n";
+    echo "\n";
+    echo "$(\"#room2split0button\").bind('click', function() {\n";
+    echo "    var bticinolightnumber = \"3\";\n";
+    echo "    var bticinomode = $(\"#room2split0mode\").val();\n";
+    echo "    var bticinotemp = $(\"#room2split0temp\").val() * 10;\n";
+    echo "    var bticinospeed = $(\"#room2split0speed\").val();\n";
+    echo "    if ($(\"#room2split0swing\").prop(\"checked\")) {\n";
+    echo "        var bticinoswing = \"1\";\n";
+    echo "    } else {\n";
+    echo "        var bticinoswing = \"0\";\n";
+    echo "    }\n";
+    echo "    $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*#4*3#11#\" + bticinolightnumber + \"*#22*\" + bticinomode + \"*\" + bticinotemp + \"*\" + bticinospeed + \"*\" + bticinoswing + \"##\"));\n";
+    echo "});\n";
+    echo "\n";
+    echo "$(\"#room3split0button\").bind('click', function() {\n";
+    echo "    var bticinolightnumber = \"4\";\n";
+    echo "    var bticinomode = $(\"#room3split0mode\").val();\n";
+    echo "    var bticinotemp = $(\"#room3split0temp\").val() * 10;\n";
+    echo "    var bticinospeed = $(\"#room3split0speed\").val();\n";
+    echo "    if ($(\"#room3split0swing\").prop(\"checked\")) {\n";
+    echo "        var bticinoswing = \"1\";\n";
+    echo "    } else {\n";
+    echo "        var bticinoswing = \"0\";\n";
+    echo "    }\n";
+    echo "    $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*#4*3#11#\" + bticinolightnumber + \"*#22*\" + bticinomode + \"*\" + bticinotemp + \"*\" + bticinospeed + \"*\" + bticinoswing + \"##\"));\n";
+    echo "});\n";
+?>

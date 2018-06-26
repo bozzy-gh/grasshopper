@@ -18,6 +18,7 @@
     <script src="includes/refresh_lightstatus_from_db.js.php"></script>
     <script src="includes/light_on-off_execute.js.php"></script>
     <script src="includes/light_dimmer_execute.js.php"></script>
+    <script src="includes/split_execute.js.php"></script>
 
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
@@ -36,6 +37,7 @@
     </div>
     <div data-role="collapsible-set" data-inset="true">
 <?php require dirname(__FILE__).'/includes/controls.php'; ?>
+<?php require dirname(__FILE__).'/includes/split_controls.php'; ?>
     </div>
   </div>
 
