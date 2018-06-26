@@ -1,4 +1,6 @@
 <?php
+    Header("Content-Type: text/html");
+
     $myhome = parse_ini_file(dirname(__FILE__).'/myhome.conf', true);
     $myhomekeys = array_keys($myhome);
     $myhomevalues = array_values($myhome);
