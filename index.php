@@ -36,8 +36,7 @@
       <h2>Grasshopper</h2>
     </div>
     <div data-role="collapsible-set" data-inset="true">
-<?php require dirname(__FILE__).'/includes/controls.php'; ?>
-<?php require dirname(__FILE__).'/includes/split_controls.php'; ?>
+<?php require dirname(__FILE__).'/includes/controls.html.php'; ?>
     </div>
   </div>
 

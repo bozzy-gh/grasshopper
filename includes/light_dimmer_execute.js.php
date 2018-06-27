@@ -20,9 +20,9 @@
                 echo "  window.clearInterval(run_update_every_x_milliseconds);\n";
                 echo "});\n";
                 echo "$(\"#div-room".$room."point".$point."slider\").on('slidestop', function() {\n";
-                echo "  var mhlightnumber = \"".$myroomkeys[$point]."\"\n";
+                echo "  var mhpointnumber = \"".$myroomkeys[$point]."\";\n";
                 echo "  var sliderstatus = $(\"#room".$room."point".$point."slider\").val();\n";
-                echo "  $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*1*\" + sliderstatus + \"*\" + mhlightnumber + \"##\"));\n";
+                echo "  $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*1*\" + sliderstatus + \"*\" + mhpointnumber + \"##\"));\n";
                 echo "  if (sliderstatus != \"0\") {\n";
                 echo "    $(\"#room".$room."point".$point."onoff\").val('on').slider(\"refresh\");\n";
                 echo "  } else {\n";

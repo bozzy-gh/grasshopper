@@ -1,5 +1,5 @@
 <?php
-    // this file is used by light_on-off_execute.php, light_dimmer_execute.php and controls.php to send any frame (light, automation, etc.) to BTicino MyHome
+    // this file is used by light_on-off_execute.js.php, light_dimmer_execute.js.php, split_execute.js.php and controls.html.php to send any frame (light, automation, etc.) to BTicino MyHome
 
     require dirname(__FILE__).'/ownGateway.php';
 

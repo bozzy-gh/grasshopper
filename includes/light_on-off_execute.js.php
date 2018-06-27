@@ -20,18 +20,18 @@
                 echo "  window.clearInterval(run_update_every_x_milliseconds);\n";
                 echo "});\n";
                 echo "$(\"#room".$room."point".$point."onoff\").on('slidestop', function() {\n";
-                echo "  var mhlightnumber = \"".$myroomkeys[$point]."\";\n";
+                echo "  var mhpointnumber = \"".$myroomkeys[$point]."\";\n";
                 echo "  var onoffstatus = $(this).val();\n";
                 echo "  if (onoffstatus != \"off\") {\n";
                 if ($mypoint[1] == 1) {
-                    echo "    var onoffstatusvalue = 10\n";
+                    echo "    var onoffstatusvalue = 10;\n";
                 } else {
-                    echo "    var onoffstatusvalue = 1\n";
+                    echo "    var onoffstatusvalue = 1;\n";
                 }
                 echo "  } else {\n";
                 echo "    var onoffstatusvalue = 0;\n";
                 echo "  }\n";
-                echo "  $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*1*\" + onoffstatusvalue + \"*\" + mhlightnumber + \"##\"));\n";
+                echo "  $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*1*\" + onoffstatusvalue + \"*\" + mhpointnumber + \"##\"));\n";
                 if ($mypoint[1] == 1) {
                     echo "  $(\"#room".$room."point".$point."slider\").val(onoffstatusvalue).slider(\"refresh\");\n";
                 }
@@ -39,8 +39,8 @@
                 echo "});\n";
             } else if ($mypoint[1] == 3) {
                 echo "$(\"#room".$room."point".$point."button\").bind('click', function() {\n";
-                echo "  var mhlightnumber = \"".$myroomkeys[$point]."\";\n";
-                echo "  $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*1*18*\" + mhlightnumber + \"##\"));\n";
+                echo "  var mhpointnumber = \"".$myroomkeys[$point]."\";\n";
+                echo "  $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*1*18*\" + mhpointnumber + \"##\"));\n";
                 echo "});\n";
             }
         }

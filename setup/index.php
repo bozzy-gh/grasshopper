@@ -152,7 +152,7 @@ $(function () {
                 columns: [
                     { name: 'bticinonumber', display: 'Bticino Number', ctrlCss: { 'width': '100px', 'text-align': 'right' } },
                     { name: 'controlpointname', display: 'Controlpoint Name', ctrlCss: { 'width': '200px'} },
-                    { name: 'controlpointtype', display: 'Type', ctrlCss: { 'width': '150px'}, type: 'select', ctrlOptions: { 0: 'Light on-off', 1: 'Light dimmable', 2: 'Motorised Screens', 3: 'Push-button'} }
+                    { name: 'controlpointtype', display: 'Type', ctrlCss: { 'width': '150px'}, type: 'select', ctrlOptions: { 0: 'Light on-off', 1: 'Light dimmable', 2: 'Motorised Screens', 3: 'Push-button', 4: 'Split control'} }
                 ],
                 initData: [
                     {
