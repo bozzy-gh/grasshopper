@@ -26,7 +26,7 @@
                 echo "                  <label for='room".$room."split".$point."mode'>Mode</label>\n";
                 echo "                  <select name='room".$room."split".$point."mode' id='room".$room."split".$point."mode' data-mini='true'>\n";
                 echo "                    <option value='0'>Off</option>\n";
-                echo "                    <option value='1'>Warm</option>\n";
+                echo "                    <option value='1'>Heat</option>\n";
                 echo "                    <option value='2'>Cool</option>\n";
                 echo "                    <option value='3'>Fan</option>\n";
                 echo "                    <option value='4'>Dry</option>\n";

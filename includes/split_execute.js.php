@@ -26,7 +26,7 @@
                 echo "  } else {\n";
                 echo "    var mhpointswing = \"0\";\n";
                 echo "  }\n";
-                echo "  $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*#4*3#11#\" + mhpointnumber + \"*#22*\" + mhpointmode + \"*\" + mhpointtemp + \"*\" + mhpointspeed + \"*\" + mhpointswing + \"##\"));\n";
+                echo "  $.post(\"exec/ownCommand.php?frame=\" + encodeURIComponent(\"*#4*3#\" + mhpointnumber + \"*#22*\" + mhpointmode + \"*\" + mhpointtemp + \"*\" + mhpointspeed + \"*\" + mhpointswing + \"##\"));\n";
                 echo "});\n";
             }
         }
