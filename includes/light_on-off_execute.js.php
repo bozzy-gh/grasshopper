@@ -1,7 +1,7 @@
 <?php
     Header("Content-Type: application/javascript");
 
-    echo "//this script looks at the value of the on-off switch and forwards that value to the Gateway. If it is a dimmable light, also the slider (0=>10) is updated on the webpage."
+    echo "//this script looks at the value of the on-off switch and forwards that value to the Gateway. If it is a dimmable light, also the slider (0=>10) is updated on the webpage.\n";
     $myhome = parse_ini_file(dirname(__FILE__).'/myhome.conf', true);
     $myhomevalues = array_values($myhome);
     $roomscount = count($myhome);
