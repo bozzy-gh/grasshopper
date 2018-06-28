@@ -16,9 +16,6 @@
     <script src="includes/ajax_submit.js"></script>
     <script src="includes/continuously_update_status.js"></script>
     <script src="includes/refresh_lightstatus_from_db.js.php"></script>
-    <script src="includes/light_on-off_execute.js.php"></script>
-    <script src="includes/light_dimmer_execute.js.php"></script>
-    <script src="includes/split_execute.js.php"></script>
 
     <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
@@ -45,6 +42,10 @@
       $('#loading').hide();
     });
   </script>
+
+  <script src="includes/light_on-off_execute.js.php"></script>
+  <script src="includes/light_dimmer_execute.js.php"></script>
+  <script src="includes/split_execute.js.php"></script>
 </body>
 
 </html>
